@@ -1,1 +1,10 @@
-Workflow files are the recipe for task automation. This is where actions are placed if I want to use them for a task.
+name: Docker Actions
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
