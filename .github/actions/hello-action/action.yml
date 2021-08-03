@@ -1,0 +1,19 @@
+name: "my hello action"
+description: "say hello with GitHub Actions"
+
+inputs:
+  firstGreeting:
+    description: "1st greeting"
+    required: true
+    default: Hubot
+  secondGreeting:
+    description: "2nd greeting"
+    required: true
+    default: "Mona the Octocat"
+  thirdGreeting:
+    description: "3rd greeting"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
