@@ -1,0 +1,10 @@
+name: "cat facts action"
+description: "fetch interesting facts about cats"
+
+outputs:
+  fact:
+    description: "a fact about cat"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
