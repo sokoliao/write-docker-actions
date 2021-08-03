@@ -1,7 +1,7 @@
 name: "my hello action"
 description: "say hello with GitHub Actions"
 
-inpus:
+inputs:
   firstGreeting:
     description: "1st greeting"
     required: true
