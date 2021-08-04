@@ -1,0 +1,13 @@
+name: "Issue Maker"
+description: "An action to make issues out of cat facts"
+
+inputs:
+  repoToken:
+    description: "repo token"
+    required: true
+  fact:
+    description: "a cat about the cat"
+    required: true
+    default: "cat is a lie"
+  issueTitle:
+    description: "title of an issue"
