@@ -8,7 +8,8 @@ const run = async function() {
     try {
         const octokit = new github.getOctokit(token);
         const issue = await octokit.rest.issues.create({
-            ...github.context,
+            repo: github.context.repo.repo,
+            owner: github.context.repo.owner,
             title: title,
             body: fact
         });
