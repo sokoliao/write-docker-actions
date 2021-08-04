@@ -11,3 +11,7 @@ inputs:
     default: "cat is a lie"
   issueTitle:
     description: "title of an issue"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
